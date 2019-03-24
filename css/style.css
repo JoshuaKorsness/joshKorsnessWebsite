@@ -1,0 +1,326 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	/*font-family: 'Krub', sans-serif;*/
+	font-family: 'Raleway', sans-serif;
+}
+
+a {
+	color: white;
+}
+
+.openingPage {
+	display: flex;
+	flex-direction: row;
+	background: #ffffff;
+	color: #282828;
+}
+
+.openPageLinks {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 35vw;
+}
+
+.work, .build, .fun {
+	cursor: pointer;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	animation: ani 2s infinite;
+	color: #7a7a7a;
+	transition-duration: 0.5s;
+}
+
+.work {
+	font-family: 'Flamenco', cursive;
+}
+
+.build {
+	font-family: 'Flamenco', cursive;
+}
+
+.fun {
+	font-family: 'Flamenco', cursive;
+}
+
+.work:hover, .build:hover, .fun:hover {
+	transform: scale(1.05);
+}
+
+/*		.work {
+	animation: aniW 2.1s infinite;
+}
+
+.build {
+	animation: aniB 2.4s infinite;
+}
+
+.fun {
+	animation: aniF 2.3s infinite;
+}*/
+
+
+@keyframes ani {
+	  0% {
+	    margin-right: 20px;
+	  }
+	  50% {
+	    margin-right: 30px;
+	  }
+	  100% {
+	    margin-right: 20px;
+	  }
+}
+
+/*		@keyframes aniW {
+	  0% {
+	    margin-right: 20px;
+	  }
+	  50% {
+	    margin-right: 25px;
+	  }
+	  100% {
+	    margin-right: 20px;
+	  }
+}
+
+@keyframes aniB {
+	  0% {
+	    margin-right: 20px;
+	  }
+	  50% {
+	    margin-right: 25px;
+	  }
+	  100% {
+	    margin-right: 20px;
+	  }
+}
+
+@keyframes aniF {
+	  0% {
+	    margin-right: 20px;
+	  }
+	  50% {
+	    margin-right: 25px;
+	  }
+	  100% {
+	    margin-right: 20px;
+	  }
+}*/
+
+.linkedIn, .gitHub {
+	width: 30px;
+	margin-left: auto;
+	margin-right: 15px;
+	transition-duration: 0.5s;
+}
+
+.linkedIn {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	transition-duration: 0.5s;
+}
+
+.linkedIn:hover, .gitHub:hover {
+	transform: scale(1.2);
+}
+
+.openPageStatic {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 65vw;
+	justify-content: center;
+}
+
+.openPageImg {
+	display: block;
+	justify-content: flex-start;
+}
+
+.openPhoto {
+	width: 30vw;
+	height: auto;
+	border-radius: 10px;
+	border: 1px solid grey;
+	margin-
+}
+
+.openPageTxt {
+	display: flex;
+	justify-content: flex-start;
+	font-size: 1rem;
+}
+
+.introText {
+	margin-top: 0px;
+}
+
+.workHistory {
+	position: absolute;
+	top: 0px;
+	left: -75vw;
+	background-color: black;
+	background-image: url('../images/spaceBackground.jpg');
+	/*background: cover;*/
+	background-size: auto 100vh;
+	background-position: 0% 5%;
+	transition: 1s;
+	transition-timing-function: cubic-bezier(0.76, 0.05, 0.86, 0.06);
+}
+
+.workHistBody {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 75vw;
+	height: 100vh;
+	font-size: 0.8rem;
+	color: white;
+}
+
+.wHTxt {
+	position: absolute;
+	top: 5px;
+	color: white;
+	font-size: 40px;
+	text-shadow: 0 0 10px black;
+}
+
+.marsPhoto {
+	width: 30%;
+	border-radius: 50%;
+}
+
+.spaceResume {
+	width: 50%;
+	margin-left: 50px;
+	text-shadow: 0 0 10px black;
+	background-color: rgba(0,0,0,0.75);
+	border-radius: 20px;
+	padding: 10px 10px 10px 10px;
+	font-size: 1rem;
+}
+
+.buildThings {
+	position: absolute;
+	top: 0px;
+	left: -75vw;
+	transition: 1s;
+	transition-timing-function: cubic-bezier(0.76, 0.05, 0.86, 0.06);
+	background-image: url('../images/code.jpg');
+	background-size: cover;
+	color: white;
+	text-shadow: 0 0 10px black;
+	font-size: 0.8rem;
+}
+
+.buildThingsBody {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 75vw;
+	height: 100vh;
+}
+
+.bTTxt {
+	position: absolute;
+	text-align: center;
+	background-color: rgba(0,0,0,0.95);
+	border-radius: 30px;
+	top: 20px;
+}
+
+.buildTitle {
+	padding-left: 30px;
+	padding-right: 30px;
+	font-size: 40px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.buildPhoto {
+	width: 30%;
+	border-radius: 50px;
+	border: 1px solid black;
+	margin: 20px;
+}
+
+.buildTxt {
+	width: 50%;
+	background-color: rgba(0,0,0,0.95);
+	border-radius: 20px;
+	padding: 10px;
+	margin-right: 50px;
+	font-size: 1rem;
+}
+
+.forFun {
+	position: absolute;
+	top: 0px;
+	left: -75vw;
+	transition: 1s;
+	transition-timing-function: cubic-bezier(0.76, 0.05, 0.86, 0.06);
+	color: white;
+	text-shadow: 0 0 10px black;
+	font-size: 0.8rem;
+}
+
+.forFunBody {
+	background-image: url('../images/forest.jpg');
+	background-size: cover;
+	width: 75vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.funHead {
+	position: absolute; 
+	text-align: center;
+	top: 20px;
+}
+
+.funHeadText {
+	font-size: 40px;
+}
+
+.funPics {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+
+.runPhoto {
+	width: 40%;
+	margin-right: 5px;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+.singPhoto {
+	margin-left: 5px;
+	width: 40%;
+	border-radius: 10px;
+	border: 1px solid black;
+}
+
+.funText {
+	width: 40%;
+	margin-right: 50px;
+	background-color: rgba(0,0,0,0.95);
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 1rem;
+}
+
+.transIn {
+	transform: translateX(75vw);
+}
